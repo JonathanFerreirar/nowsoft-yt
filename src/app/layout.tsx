@@ -1,11 +1,10 @@
 import './globals.css'
 
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 
 import { cn } from '@/lib/utils'
 
-const inter = Inter({ subsets: ['latin'] })
+import { poppins } from './fonts'
 
 export const metadata: Metadata = {
   title: 'Nowsoft',
@@ -19,7 +18,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="pt">
-      <body className={cn(inter.className, 'bg-white')}>{children}</body>
+      <body className={cn(poppins.className, 'bg-white')}>{children}</body>
     </html>
   )
 }
